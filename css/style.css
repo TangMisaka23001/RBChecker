@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-size: cover;
+  background-color: rgb(12,12,12);
+  background-position: center;
+
+  overscroll-behavior-y: none;
+  overflow: hidden;
+}
+@font-face {
+  font-family: "yasashisa";
+  src: url(../font/07やさしさゴシック.ttf);
+}
+@media (orientation: portrait) {
+  .mainCanvas{
+    transform: scale(1.8,1.8) rotate(-90deg);
+  }
+}
+
+.mainCanvas{
+  max-width:calc(16*98vh/9);
+  max-height:98vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row1{
+  width:100%;
+  height:33%;
+  display: flex;
+  justify-content: center;
+}
+.row2 {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+}
+.row3 {
+  width: 100%;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.cardImg{
+  width:17%;
+  margin:0 1%;
+  height:auto;
+  border-radius: 50%;
+  box-shadow: 0px 0px 6px 2px rgb(255 255 218 / 80%);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.cardImg:hover{
+  transform: scale(1.1, 1.1);
+}
+.add_dark {
+  filter: brightness(25%) grayscale(100%);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.45);
+  transform: scale(1.0, 1.0) !important;
+}
+
+.retBox {
+  width: 17%;
+    margin: 0 1%;
+    height: auto;
+    transition: 0.2s;
+    display: flex;
+}
+.butImg{
+  width:88%;
+  height:auto;
+  margin:auto;
+  cursor: pointer;
+  transition: 1.0s;
+}
+.butImg:hover{
+  transform: rotate(-360deg);
+}
