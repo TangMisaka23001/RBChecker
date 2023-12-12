@@ -54,6 +54,7 @@ body {
   box-shadow: 0px 0px 6px 2px rgb(255 255 218 / 80%);
   transition: 0.2s;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .cardImg:hover{
   transform: scale(1.1, 1.1);
@@ -77,6 +78,7 @@ body {
   margin:auto;
   cursor: pointer;
   transition: 1.0s;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .butImg:hover{
   transform: rotate(-360deg);
