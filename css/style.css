@@ -20,6 +20,14 @@ body {
     transform: scale(1.8,1.8) rotate(-90deg);
   }
 }
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg) scale(1.1, 1.1);
+  }
+  100% {
+    transform: rotate(-360deg) scale(1.0, 1.0);
+  }
+}
 
 .mainCanvas{
   max-width:calc(16*98vh/9);
@@ -77,9 +85,14 @@ body {
   height:auto;
   margin:auto;
   cursor: pointer;
-  transition: 1.0s;
+  transition: 0.3s;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .butImg:hover{
-  transform: rotate(-360deg);
+  transform: scale(1.1, 1.1);
+}
+
+.add_rotate{
+  animation-name: rotateAnimation;
+  animation-duration: 1.0s;
 }

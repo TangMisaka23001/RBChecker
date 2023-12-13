@@ -10,6 +10,10 @@ $(function(){
   });
   $('.butImg').on('click',function () {
     $('.cardImg').removeClass('add_dark');
+    $(this).addClass('add_rotate');
+    setTimeout(() => {
+      $(this).removeClass('add_rotate');
+    }, 1000);
   });
 });
 
